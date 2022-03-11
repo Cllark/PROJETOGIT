@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-compatilble" content="IE-edge">
+    <title>Health First </title>
+    <!-- Bootstrap & fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./JS/script.js"></script>
+</head>
+
+<body>
+<!--        Menu superior        -->
+<nav class="navbar navbar-expand-lg navbar-primary bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./configuracoes.html">Meu Perfil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-0 mb-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./dashboard.html">Gráficos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pesos.html">Peso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./refeicao.html">Refeição</a>
+                </li>
+            </ul>
+            <!-- <span class="navbar-text">
+                Navbar text with an inline element
+            </span> -->
+        </div>
+    </div>
+</nav>
+
+    <!--        Avatar        -->
+    <div class="container pb-lg-2">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="configuracoes.html">
+                <img src="./Imgs/eu.jpeg" alt="avatar.png" id="avatar">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id=avatarname>
+                Joao Oliveira<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="upload">
+        <div class="input-group mb-1">
+            <label class="input-group-text" for="inputGroupFile01">upload</label>
+            <input type="file" class="form-control" id="inputGroupFile01">
+        </div>
+    </div>
+
+<!--        Dados        -->
+    <div class="container">
+        <p id="titulodados">Meus Dados<br></p>  
+    </div>
+    <div class="container" id="formulario">
+        <div class="row">
+            <form>
+                <div class=" pb-lg-2">
+                    <fieldset disabled>
+                    <div class="mb-6" id="disabledTextInput">
+                        <label for="disabledTextInput" class="form-label-lg">Nome Completo</label>
+                        <input type="text" class="form-control" placeholder="Joao Vitor de Oliveira">
+                    </div>
+                </div>    
+            </form>
+    </div>
+        <div class="row g-2" id="mailsex">
+            <div class="col-md">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="cadastro@healthtrack.com.br">
+                    <label for="floatingInputGrid">E-mail</label>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                        <option selected>Masculino</option>
+                        <option value="2">Feminino</option>
+                    </select>
+                    <label for="floatingSelectGrid">Sexo</label>
+                </div>
+            </div>
+        </div><br>
+        <div class="row g-2" id="mailsex">
+            <div class="col-md">
+                <div class="form-floating">
+                    <input type="name" class="form-control" id="floatingInputGrid" placeholder="Nome Teste" value="Clark">
+                    <label for="floatingInputGrid">Apelido</label>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-floating">
+                    <input type="altura" class="form-control" id="floatingInputGrid" placeholder="171cm" value="171 cm">
+                    <label for="floatingInputGrid">Altura</label>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-floating">
+                    <input type="idade" class="form-control" id="floatingInputGrid" placeholder="23" value="23">
+                    <label for="floatingInputGrid">Idade</label>
+                </div>
+            </div>
+                <div class="container">
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="metapeso" class="form-control" id="floatingInputGrid" placeholder="100 kg" value="100 kg">
+                                <label for="floatingInputGrid">Meta Peso</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="metakcal" class="form-control" id="floatingInputGrid" placeholder="1200 kcal" value="1200 kcal">
+                                <label for="floatingInputGrid">Meta Calorias Consumidas</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="metatime" class="form-control" id="floatingInputGrid" placeholder="60 minutos" value="60 minutos">
+                                <label for="floatingInputGrid">Meta Exercicio</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="metakcal" class="form-control" id="floatingInputGrid" placeholder="1500 kcal" value="460 kcal">
+                                <label for="floatingInputGrid">Meta Calorias Gastas</label>
+                            </div>
+                        </div>
+                </div> 
+            </div>
+        </div>
+    </div><br>
+<!--        Botao Confirma        -->
+    <div class="container">
+        <button type="button" class="btn btn-success" id="botaosalvar" onclick="sucesso()">Atualizar Meus Dados</button>
+    </div><br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
